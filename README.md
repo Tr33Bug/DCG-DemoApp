@@ -4,6 +4,23 @@ This repository contains a basic PyQT app with a server to run the fine-tuned Do
 ## Overview
 This repository contains a basic PyQT app with a server to run the fine-tuned Domainlifecycles Code Generator (DCG) model and showcasing the code generation.
 
+```
+# Repository Overview
+DCG-DemoApp
+├──icons
+│   ├── e-mit-stern-grün.svg
+│   └── esentri_weiß-gruen.png
+├──models
+│   └──finalTraining_v1
+│   │   ├── adapter_config.json
+│   │   ├── adapter_model.safetensors
+│   │   ├── generation_config.json
+│   │   └── training_args.bin
+├── DCG_Client.py
+├── DCG_Server.py
+└── README.md
+```
+
 ## Installation and Setup
 
 This application consists of two parts: `DCG_Client` and `DCG_Server`. Follow the steps below to get started.
