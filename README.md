@@ -13,14 +13,19 @@ This application consists of two parts: `DCG_Client` and `DCG_Server`. Follow th
 1. **Clone the Repository**  
    On your Nvidia GPU PC or Server Host, clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo/DCG_Server
+   git clone git@github.com:Tr33Bug/DCG-DemoApp.git
+   cd DCG-DemoApp/DCG_Server
    ```
+
 2. **Install the Requirements**  
    Install the necessary Python packages:
    ```bash
-   pip install flask transformers torch
+   pip install flask transformers
+   pip3 install torch torchvision torchaudio
+
    ```
+   >*PyTorch problems: If you have problems when installing or running pytotch use the installation instructions for your system from the homepage: [pytorch.org](https://pytorch.org/)*
+
 3. **Start the Server**  
    Run the server application:
    ```bash
@@ -36,11 +41,13 @@ This application consists of two parts: `DCG_Client` and `DCG_Server`. Follow th
    git clone https://github.com/your-username/your-repo.git
    cd your-repo/DCG_Client
    ```
+
 2. **Install the Requirements**  
    Install the necessary Python packages:
    ```bash
    pip install PyQt5
    ```
+
 3. **Start the Client**  
    Run the client application:
    ```bash
