@@ -1,8 +1,9 @@
 # DCG-DemoApp
-This repository contains a basic PyQT app with a server to run the fine-tuned Donainlifecycles Code Generator (DCG) model and showcasing the code generation.
+The DCG Demo App is an application which is a frontend and server for the showcasing of the Domainlifecycles Code Generator (DCG) model which was developed as part of my master thesis at esentri. 
+This repository is a decoupling from the main repository [DomainlifecyclesCodeGenerator](https://github.com/Tr33Bug/DomainlifecyclesCodeGenerator) in which the entire development of the model is documented. 
 
 ## Overview
-This repository contains a basic PyQT app with a flask server to run the fine-tuned Domainlifecycles Code Generator (DCG) model and showcasing the code generation.
+This repository contains a basic PyQT app with a flask server to run the fine-tuned DCG model, showcasing the code generation.
 
 ```bash
 DCG-DemoApp
@@ -97,7 +98,7 @@ Now, you should have the `DCG_Server` running on your server host and the `DCG_C
         - DomainCommandModel: `<START> { "@class" : "nitrox.dlc.mirror.model.DomainCommandModel"`
 3. **Settings:**
     - **Timeout** sets the time the client waits for the server to respond. 
-    - **Post-Processing** describes the closing and cleaning up of the JSON objects. (See `postprocessing()` function in DSG_Client.py line 17.)
+    - **Post-Processing** describes the closing and cleaning up of the JSON objects. (See `postprocessing()` function in [DSG_Client.py](DSG_Client.py) line 17.)
     - With **JSON Format** the generated JSON is parsed. If parsing is successful, the JSON is formatted and displayed in the output window. If errors occur, the raw generated JSON is displayed with the corresponding error in the output window. 
     - JSON generation is started with the **Generate!** button. This sends a POST request to the server. 
 4. **Output Window**
