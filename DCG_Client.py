@@ -152,7 +152,7 @@ class ChatWindow(QMainWindow):
         title_layout = QHBoxLayout()
         
         # Logo/Icon
-        self.icon_label = QSvgWidget("icons/e-mit-stern-grün.svg", self)
+        self.icon_label = QSvgWidget("images/e-mit-stern-grün.svg", self)
         self.icon_label.setStyleSheet("border: 2px solid #99CC33; border-radius: 10px;")
         self.icon_label.setFixedSize(64, 64)
         title_layout.addWidget(self.icon_label)

@@ -2,14 +2,13 @@
 This repository contains a basic PyQT app with a server to run the fine-tuned Donainlifecycles Code Generator (DCG) model and showcasing the code generation.
 
 ## Overview
-This repository contains a basic PyQT app with a server to run the fine-tuned Domainlifecycles Code Generator (DCG) model and showcasing the code generation.
+This repository contains a basic PyQT app with a flask server to run the fine-tuned Domainlifecycles Code Generator (DCG) model and showcasing the code generation.
 
-```
-# Repository Overview
+```bash
 DCG-DemoApp
-├──icons
-│   ├── e-mit-stern-grün.svg
-│   └── esentri_weiß-gruen.png
+├──images
+│   ├── DCGAppUIUsage.png
+│   └── e-mit-stern-grün.svg
 ├──models
 │   └──finalTraining_v1
 │   │   ├── adapter_config.json
@@ -23,7 +22,7 @@ DCG-DemoApp
 
 ## Installation and Setup
 
-This application consists of two parts: `DCG_Client` and `DCG_Server`. Follow the steps below to get started.
+This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Follow the steps below to get started.
 
 ### 1. Setting Up DCG_Server
 
@@ -75,10 +74,40 @@ Now, you should have the `DCG_Server` running on your server host and the `DCG_C
 
 
 ## Usage
-Guide on how to use the application, including all available commands and options.
+![UI-WithAnnotations](images/DCGAppUIUsage.png)
+
+1. **Server Settings:**
+    - In this text field you must enter the IP address with the port and the `/chat` as the interface on which the server is running. 
+    - If the server and client are running on the same host, `127.0.0.1` can be used here. 
+2. **Prompt Input:**
+    - The prompt for the DCG is entered in this text field. 
+    - The DCG is trained on next token generation and therefore the prompt is the start of the generated JSON object. 
+    - Best practice for generation is to begin the prompt with <START>, as this token was also used as the start token during training. 
+    - It is also advisable to specify the entire class to be generated in order to increase the quality of the generated JSON objects. 
+    - Example prompts for all different domain lifecycle objects formally NitroX objects:
+        - EntityModel: `<START> { "@class" : "nitrox.dlc.mirror.model.EntityModel"`
+        - ValueObjectModel: `<START> { "@class" : "nitrox.dlc.mirror.model.ValueObjectModel"`
+        - AggregateRootModel: `<START> { "@class" : "nitrox.dlc.mirror.model.AggregateRootModel"`
+        - IdentityModel: `<START> { "@class" : "nitrox.dlc.mirror.model.IdentityModel"`
+        - EnumModel: `<START> { "@class" : "nitrox.dlc.mirror.model.EnumModel"`
+        - DomainServiceModel: `<START> { "@class" : "nitrox.dlc.mirror.model.DomainServiceModel"`
+        - RepositoryModel: `<START> { "@class" : "nitrox.dlc.mirror.model.RepositoryModel"`
+        - ApplicationServiceModel: `<START> { "@class" : "nitrox.dlc.mirror.model.ApplicationServiceModel"`
+        - DomainEventModel: `<START> { "@class" : "nitrox.dlc.mirror.model.DomainEventModel"`
+        - DomainCommandModel: `<START> { "@class" : "nitrox.dlc.mirror.model.DomainCommandModel"`
+3. **Settings:**
+    - **Timeout** sets the time the client waits for the server to respond. 
+    - **Post-Processing** describes the closing and cleaning up of the JSON objects. (See `postprocessing()` function in DSG_Client.py line 17.)
+    - With **JSON Format** the generated JSON is parsed. If parsing is successful, the JSON is formatted and displayed in the output window. If errors occur, the raw generated JSON is displayed with the corresponding error in the output window. 
+    - JSON generation is started with the **Generate!** button. This sends a POST request to the server. 
+4. **Output Window**
+    - In the output window, the prompt and the DCG output are displayed in a chat history design. 
+    - The history is deleted when the app is restarted. 
 
 ## Contributing
-Guidelines for contributing to the project, including coding standards and pull request procedures.
+This project is not being actively developed further. The demo application was only used to demonstrate the results of my master thesis and the Domainlifecycles Code Generator (DCG), formally NitroX Code Generator (NCG).
+
+For questions or suggestions please open an issue.
 
 ## License
-Information about the project's license, typically a link to the full license text.
+TODO: ??
