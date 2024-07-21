@@ -111,9 +111,12 @@ This project is not being actively developed further. The demo application was o
 For questions or suggestions please open an issue.
 
 ## Acknowledgements
-- **Filip Stepniak** ([feelsteps](https://github.com/feelsteps)) - Supervisor from [esentri](https://esentri.com/)
-- **Mario Herb** ([chuckson](https://github.com/chuckson))- Supervisor from [esentri](https://esentri.com/)
-- **Prof. Patrick Baier** ([pabair](https://github.com/pabair)) - Supervising professor from [Hochschule Karlsruhe - University of Applied Sciences](https://www.h-ka.de/)
+- **Filip Stepniak** ([feelsteps](https://github.com/feelsteps))
+   - Supervisor from [esentri](https://esentri.com/)
+- **Mario Herb** ([chuckson](https://github.com/chuckson))
+   - Supervisor from [esentri](https://esentri.com/)
+- **Prof. Patrick Baier** ([pabair](https://github.com/pabair))
+   - Supervising professor from [Hochschule Karlsruhe - University of Applied Sciences](https://www.h-ka.de/)
 
 
 ## License
