@@ -143,7 +143,7 @@ class ChatWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Donainlifecycles Code Generator Demo")
+        self.setWindowTitle("Domainlifecycles Code Generator Demo")
         self.setGeometry(100, 100, 1400, 700)
 
         main_layout = QGridLayout()
@@ -158,7 +158,7 @@ class ChatWindow(QMainWindow):
         title_layout.addWidget(self.icon_label)
 
         # Title Label
-        self.title_label = QLabel("Donainlifecycles Code Generator Demo", self)
+        self.title_label = QLabel("Domainlifecycles Code Generator Demo", self)
         self.title_label.setStyleSheet("color: #99CC33; font-size: 30px; font-weight: italic;")
         title_layout.addWidget(self.title_label)
 
