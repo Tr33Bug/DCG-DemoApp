@@ -101,7 +101,7 @@ Now, you should have the `DCG_Server` running on your server host and the `DCG_C
     - **Post-Processing** describes the closing and cleaning up of the JSON objects. (See `postprocessing()` function in [DSG_Client.py](DSG_Client.py) line 17.)
     - With **JSON Format** the generated JSON is parsed. If parsing is successful, the JSON is formatted and displayed in the output window. If errors occur, the raw generated JSON is displayed with the corresponding error in the output window. 
     - JSON generation is started with the **Generate!** button. This sends a POST request to the server. 
-4. **Output Window**
+4. **Output Window:**
     - In the output window, the prompt and the DCG output are displayed in a chat history design. 
     - The history is deleted when the app is restarted. 
 
