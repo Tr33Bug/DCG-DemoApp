@@ -1,4 +1,7 @@
 # DCG-DemoApp
+
+![](images/DCG-Logo-Banner.png) 
+
 The DCG Demo App is an application which is a frontend and server for the showcasing of the Domainlifecycles Code Generator (DCG) model which was developed as part of my master thesis at esentri. 
 This repository is a decoupling from the main repository [DomainlifecyclesCodeGenerator](https://github.com/Tr33Bug/DomainlifecyclesCodeGenerator) in which the entire development of the model is documented. 
 
