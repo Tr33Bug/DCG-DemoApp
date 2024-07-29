@@ -25,6 +25,9 @@ DCG-DemoApp
 
 This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Follow the steps below to get started.
 
+> [!IMPORTANT] 
+> The Server should run on a Linux 64 bit system with a NVIDIA graphics card. The Setup was tested and engineered on Ubuntu 22.04.4 LTS with a GeForce RTX 2080 Ti. 
+
 ### 1. Setting Up DCG_Server
 
 1. **Clone the Repository**  
@@ -34,14 +37,15 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    cd DCG-DemoApp/DCG_Server
    ```
 
-2. **Install the Requirements**  
-   Install the necessary Python packages:
+2. **Install the Requirements**
+   Create a conda environment and install all the requirements from the `environment.yml`:
    ```bash
-   pip install flask transformers
-   pip3 install torch torchvision torchaudio
+   # create environment
+   conda env create -f environment.yml
 
+   # activate environment
+   conda activate DCGServerEnv
    ```
-   >*PyTorch problems: If you have problems when installing or running pytotch use the installation instructions for your system from the homepage: [pytorch.org](https://pytorch.org/)*
 
 3. **Start the Server**  
    Run the server application:
@@ -55,8 +59,8 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
 1. **Clone the Repository**  
    On your client device, clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo/DCG_Client
+   git clone git@github.com:Tr33Bug/DCG-DemoApp.git
+   cd DCG-DemoApp/DCG_Server
    ```
 
 2. **Install the Requirements**  
