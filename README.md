@@ -18,7 +18,8 @@ DCG-DemoApp
 │   │   └── training_args.bin
 ├── DCG_Client.py
 ├── DCG_Server.py
-└── README.md
+├── README.md
+└── environment.yml
 ```
 
 ## Installation and Setup
