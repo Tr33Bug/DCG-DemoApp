@@ -9,8 +9,14 @@ import json
 
 # test prompt: <START> { "@class" : "nitrox.dlc.mirror.model.EntityModel"
 
+## SERVER URL (default)
+# Change the SERVER_URL to the URL of your deployed server, where the DCG_Server.py is running or use localhost when running DCG_Server.py and DCG_Client.py on the same machine
+# SERVER_URL = "http://localhost:5000/chat"
+SERVER_URL = "http://11.11.11.254:5000/chat"
+
+
 def get_response_from_model_test(message):
-    url = 'http://11.11.11.254:5000/chat'
+    url = SERVER_URL
     response = requests.post(url, json={'message': message})
     return response.json().get('response', '')
 
@@ -163,7 +169,7 @@ class ChatWindow(QMainWindow):
         title_layout.addWidget(self.title_label)
 
         # Server Settings Widget
-        self.server_settings = ServerSettings("http://11.11.11.254:5000/chat")
+        self.server_settings = ServerSettings(SERVER_URL)
         title_layout.addWidget(self.server_settings, alignment=Qt.AlignRight)
 
         main_layout.addLayout(title_layout, 0, 0)
