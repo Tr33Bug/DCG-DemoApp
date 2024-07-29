@@ -33,6 +33,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
 > The Server should run on a Linux 64 bit system with a NVIDIA graphics card. The Setup was tested and engineered on Ubuntu 22.04.4 LTS with a GeForce RTX 2080 Ti. 
 
 1. **Clone the Repository**  
+
    On your Nvidia GPU PC or Server Host, clone the repository:
    ```bash
    git clone git@github.com:Tr33Bug/DCG-DemoApp.git
@@ -40,6 +41,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    ```
 
 2. **Install the Requirements**
+
    Create a conda environment and install all the requirements from the `environment.yml`:
    ```bash
    # create environment
@@ -50,6 +52,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    ```
 
 3. **Start the Server**  
+
    Run the server application:
    ```bash
    python server.py
@@ -59,6 +62,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
 ### 2. Setting Up DCG_Client
 
 1. **Clone the Repository**  
+
    On your client device, clone the repository:
    ```bash
    git clone git@github.com:Tr33Bug/DCG-DemoApp.git
@@ -66,12 +70,14 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    ```
 
 2. **Install the Requirements**  
+
    Install the necessary Python packages:
    ```bash
    pip install PyQt5
    ```
 
 3. **Start the Client**  
+
    Run the client application:
    ```bash
    python client.py
