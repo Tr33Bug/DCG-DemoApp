@@ -26,10 +26,11 @@ DCG-DemoApp
 
 This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Follow the steps below to get started.
 
-> [!IMPORTANT] 
-> The Server should run on a Linux 64 bit system with a NVIDIA graphics card. The Setup was tested and engineered on Ubuntu 22.04.4 LTS with a GeForce RTX 2080 Ti. 
+
 
 ### 1. Setting Up DCG_Server
+> [!IMPORTANT] 
+> The Server should run on a Linux 64 bit system with a NVIDIA graphics card. The Setup was tested and engineered on Ubuntu 22.04.4 LTS with a GeForce RTX 2080 Ti. 
 
 1. **Clone the Repository**  
    On your Nvidia GPU PC or Server Host, clone the repository:
