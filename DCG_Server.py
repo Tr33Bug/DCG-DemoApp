@@ -9,7 +9,6 @@ run_name = "finalTraining_v1"
 
 # define model for tokenizer
 model_name = "codellama/CodeLlama-7b-hf"
-# model_name = "bigcode/starcoderbase-7b"
 
 # model save path
 model_save_path = "./models/" + run_name + "/"
