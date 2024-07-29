@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dcg-demo"
+version = "1.0.0"
+description = ""
+authors = ["Götz-Henrik Wiegand"]
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+flask = "^3.0.3"
+transformers = "^4.43.3"
+torch = "^2.4.0"
+torchvision = "^0.19.0"
+torchaudio = "^2.4.0"
+bitsandbytes = "0.42.0"
+pyqt5 = "^5.15.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
