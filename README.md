@@ -76,12 +76,19 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    pip install PyQt5
    ```
 
+3. **Server IP Setting**
+
+   For better convenience, change the url in [DCG_Client.py](DCG_Client.py) in Line 15 to your own Server IP or when running it on the same device, use localhost `127.0.0.1:5000/chat` instead.
+   - Default Port is `5000`
+   - API endpoint is `/chat`
+
 3. **Start the Client**  
 
    Run the client application:
    ```bash
    python client.py
    ```
+
 
 Now, you should have the `DCG_Server` running on your server host and the `DCG_Client` running on your client device, ready for use.
 
