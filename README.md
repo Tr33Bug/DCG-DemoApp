@@ -40,7 +40,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    On your Nvidia GPU PC or Server Host, clone the repository:
    ```bash
    git clone git@github.com:Tr33Bug/DCG-DemoApp.git
-   cd DCG-DemoApp/DCG_Server
+   cd DCG-DemoApp
    ```
 
 2. **Install the Requirements**
@@ -69,7 +69,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
    On your client device, clone the repository:
    ```bash
    git clone git@github.com:Tr33Bug/DCG-DemoApp.git
-   cd DCG-DemoApp/DCG_Server
+   cd DCG-DemoApp
    ```
 
 2. **Install the Requirements**  
