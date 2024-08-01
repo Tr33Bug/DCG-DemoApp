@@ -58,7 +58,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
 
    Run the server application:
    ```bash
-   python server.py
+   python DCG_Server.py
    ```
    You will be prompted with the host IP once the server is up and running.
 
@@ -89,7 +89,7 @@ This application consists of two parts: `DCG_Client.py` and `DCG_Server.py`. Fol
 
    Run the client application:
    ```bash
-   python client.py
+   python DCG_Client.py
    ```
 
 
